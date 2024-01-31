@@ -1,0 +1,1 @@
+python main.py --dataset gscdv2 --model_pretrain 'cla-rnn' --rnn_type 'LSTM' --step pretrain --epochs_pretrain 40 --batch_size 32
