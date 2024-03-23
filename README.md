@@ -6,6 +6,11 @@ This repo mainly contains:
 # Project Structure
 ```
 .
+└── DeltaRNN_IL             # Pytorch codes for training experiments, based on this repo https://github.com/gaochangw/DeltaRNN
+    ├── project.py              # A class defining all major training functions and stores hyperparameters
+    └── main.py                 # Main
+└── DTv1_perf_estm          # Pytorch codes for generating data for the performance estimation in the testbench
+    └── gen_rnd_data_rnn.py     # Generate random input of specified sparsity for the testbench
 └── HDL                     # HDL codes for RENETA accelerator
     ├── dtv1.sv                 # Top module, DTV1 is the internal code of RENETA
     ├── dtv1_bram_sdp.sv        # Simple Dual-Port (1R1W) BRAM
@@ -23,9 +28,8 @@ This repo mainly contains:
     ├── dtv1_spm.sv             # Sparse Data Descriptor Memory
     ├── dtv1_srg0.sv            # IPM - SMEM Request Generator CH0
     └── dtv1_srg.sv             # IPM - SMEM Request Generator CH1-2
-└── DeltaRNN_IL             # Pytorch codes for training experiments, based on this repo https://github.com/gaochangw/DeltaRNN
-    ├── project.py             # A class defining all major training functions and stores hyperparameters
-    └── main.py                # Main
+├── DTv1_BD.pptx                # Block diagrams of RENETA
+└── DTv1_ISA.xlsx               # Description of RENETA ISA
 ```
 
 # Reference
